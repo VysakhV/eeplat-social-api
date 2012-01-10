@@ -1,4 +1,4 @@
-package com.eeplat.org.json;
+package org.json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -26,9 +26,10 @@ SOFTWARE.
 
 import java.util.Iterator;
 
-import com.eeplat.org.json.HTTPTokener;
-import com.eeplat.org.json.JSONException;
-import com.eeplat.org.json.JSONObject;
+import org.json.HTTPTokener;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 
 /**
