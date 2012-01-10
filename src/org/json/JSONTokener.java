@@ -1,13 +1,14 @@
-package com.eeplat.org.json;
+package org.json;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 
-import com.eeplat.org.json.JSONArray;
-import com.eeplat.org.json.JSONException;
-import com.eeplat.org.json.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 
 
 /*

@@ -1,4 +1,4 @@
-package com.eeplat.org.json;
+package org.json;
 
 /*
 Copyright (c) 2002 JSON.org
@@ -34,11 +34,12 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeSet;
 
-import com.eeplat.org.json.JSONArray;
-import com.eeplat.org.json.JSONException;
-import com.eeplat.org.json.JSONObject;
-import com.eeplat.org.json.JSONString;
-import com.eeplat.org.json.JSONTokener;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONString;
+import org.json.JSONTokener;
+
 
 
 /**

@@ -1,9 +1,9 @@
-package com.eeplat.org.json;
+package org.json;
 
-import com.eeplat.org.json.JSONArray;
-import com.eeplat.org.json.JSONException;
-import com.eeplat.org.json.JSONObject;
-import com.eeplat.org.json.JSONTokener;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 
 /*
 Copyright (c) 2002 JSON.org
