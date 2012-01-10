@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8" %>
 <%@ page language="java" import="java.util.HashMap,java.util.Map,java.util.UUID" %>
 <%@ page language="java" import="org.json.simple.JSONArray,org.json.simple.JSONObject,org.json.simple.JSONValue" %>
-<%@ page language="java" import="com.renren.api.client.RenrenApiClient,com.renren.api.client.utils.HttpURLUtils,com.renren.api.client.RenrenApiConfig" %>
+<%@ page language="java" import="com.renren.api.client.param.impl.AccessToken,com.renren.api.client.RenrenApiClient,com.renren.api.client.utils.HttpURLUtils,com.renren.api.client.RenrenApiConfig" %>
 <%@ page language="java" import="com.eeplat.social.openapi.callback.GlobalConfig" %>
 
 
@@ -21,6 +21,22 @@ parameters.put("code", code);
 String tokenResult = HttpURLUtils.doPost(rrOAuthTokenEndpoint, parameters);
 JSONObject tokenJson = (JSONObject) JSONValue.parse(tokenResult);
 if (tokenJson != null) {
+	
+	
+	String accessToken = (String) tokenJson.get("access_token");
+	AccessToken at = new AccessToken(accessToken);
+	
+
+	RenrenApiClient apiClient = new RenrenApiClient(accessToken, true); 
+
+	
+	int rrUid = apiClient.getUserService().getLoggedInUser(at); 
+	JSONArray userInfo = apiClient.getUserService().getInfo(String.valueOf(rrUid),at); 
+	if (userInfo != null && userInfo.size() > 0)
+	{ 
+		JSONObject currentUser = (JSONObject) userInfo.get(0);
+		System.out.println("CurrentUser:::" + currentUser);
+	}
 	
 	out.println("Just for a test,您使用RenRen账号成功登录！");
 	
