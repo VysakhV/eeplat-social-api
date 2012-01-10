@@ -1,4 +1,4 @@
-package com.eeplat.org.json;
+package org.json;
 
 /*
 Copyright (c) 2006 JSON.org
@@ -26,7 +26,8 @@ SOFTWARE.
 
 import java.io.StringWriter;
 
-import com.eeplat.org.json.JSONWriter;
+import org.json.JSONWriter;
+
 
 
 /**

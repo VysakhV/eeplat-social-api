@@ -1,11 +1,12 @@
-package com.eeplat.org.json;
+package org.json;
 
 import java.io.IOException;
 import java.io.Writer;
 
-import com.eeplat.org.json.JSONException;
-import com.eeplat.org.json.JSONObject;
-import com.eeplat.org.json.JSONWriter;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONWriter;
+
 
 
 /*

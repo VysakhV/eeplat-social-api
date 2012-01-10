@@ -1,21 +1,22 @@
-package com.eeplat.org.json;
+package org.json;
 
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.Map;
 import java.io.StringWriter;
 
-import com.eeplat.org.json.CDL;
-import com.eeplat.org.json.Cookie;
-import com.eeplat.org.json.CookieList;
-import com.eeplat.org.json.HTTP;
-import com.eeplat.org.json.JSONArray;
-import com.eeplat.org.json.JSONML;
-import com.eeplat.org.json.JSONObject;
-import com.eeplat.org.json.JSONString;
-import com.eeplat.org.json.JSONStringer;
-import com.eeplat.org.json.JSONTokener;
-import com.eeplat.org.json.XML;
+import org.json.CDL;
+import org.json.Cookie;
+import org.json.CookieList;
+import org.json.HTTP;
+import org.json.JSONArray;
+import org.json.JSONML;
+import org.json.JSONObject;
+import org.json.JSONString;
+import org.json.JSONStringer;
+import org.json.JSONTokener;
+import org.json.XML;
+
 
 
 /**
