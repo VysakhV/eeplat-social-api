@@ -1,8 +1,9 @@
 package com.eeplat.social.openapi.qq;
 
 
-import com.eeplat.org.json.JSONException;
-import com.eeplat.org.json.JSONObject;
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import com.eeplat.social.openapi.http.HttpClient;
 import com.eeplat.social.openapi.http.OpenApiException;
 import com.eeplat.social.openapi.http.Response;
