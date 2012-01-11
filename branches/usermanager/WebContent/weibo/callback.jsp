@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=utf-8" %>
 <%@ page language="java" import="weibo4j.http.*" %>
 <%@ page language="java" import="weibo4j.*" %>
+<%@ page language="java" import="com.eeplat.social.openapi.user.SocialUser,com.eeplat.social.openapi.user.SocialUserManager" %>
 
 <%
 	
@@ -15,10 +16,24 @@
 			AccessToken accessToken=weibo.getOAuthAccessToken(resToken,verifier);
 				if(accessToken!=null)
 				{
-				
-					System.out.println("UserID:::" + accessToken.getUserId());
-					System.out.println("Nick Name:::" + accessToken.getScreenName());
-					System.out.println("accessToken:::" + weibo.verifyCredentials());
+
+					User currentUser = weibo.verifyCredentials();
+					SocialUser user = new SocialUser();
+					user.setCity(String.valueOf(currentUser.getCity()));
+					user.setFigureurl(currentUser.getProfileImageURL().toString());
+					user.setFigureurl1(currentUser.getURL().getPath().toString());
+					user.setGender(currentUser.getGender().toUpperCase());
+					user.setLocation(currentUser.getLocation());
+					user.setNickName(currentUser.getScreenName());
+					user.setProvince(String.valueOf( currentUser.getProvince()));
+					user.setUserDescription(currentUser.getDescription());
+					user.setUserId(String.valueOf(currentUser.getId()));
+					user.setUserName(currentUser.getName());
+					user.setOpenSite(SocialUser.OPEN_SITE_WEIBO);
+	
+					
+					SocialUserManager.storeUser(user);
+								
 					
 					out.println("Just for a test,您使用新浪微博成功登录！");				
 				}else
