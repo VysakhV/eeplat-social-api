@@ -35,10 +35,10 @@ if (tokenJson != null) {
 	if (userInfo != null && userInfo.size() > 0)
 	{ 
 		JSONObject currentUser = (JSONObject) userInfo.get(0);
-		System.out.println("CurrentUser:::" + currentUser);
+		out.println("CurrentUser:::" + currentUser);
 	}
 	
-	out.println("Just for a test,您使用RenRen账号成功登录！");
+	out.println("<br/>Just for a test,您使用RenRen账号成功登录！");
 	
 }else{
 	

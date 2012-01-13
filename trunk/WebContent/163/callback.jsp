@@ -20,7 +20,7 @@
 				{
 					out.println("User::" + tblog.verifyCredentials());
 
-					out.println("Just for a test,您使用网易账号成功登录！");		
+					out.println("<br/>Just for a test,您使用网易账号成功登录！");		
 				}else
 					{
 					out.println("请修改回调地址！");
