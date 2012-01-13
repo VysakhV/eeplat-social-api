@@ -18,9 +18,9 @@
 				
 					System.out.println("UserID:::" + accessToken.getUserId());
 					System.out.println("Nick Name:::" + accessToken.getScreenName());
-					System.out.println("accessToken:::" + weibo.verifyCredentials());
+					out.println("UserInfo:::" + weibo.verifyCredentials());
 					
-					out.println("Just for a test,您使用新浪微博成功登录！");				
+					out.println("<br/>Just for a test,您使用新浪微博成功登录！");				
 				}else
 					{
 					out.println("access token request error");
