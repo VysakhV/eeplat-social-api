@@ -12,5 +12,5 @@
     
     out.println("UserInfo:::" +  AuthUtil.getUserInfo(accessToken,openid) );
     
- 	out.println("Just for a test,您使用QQ成功登录！");
+ 	out.println("<br/>Just for a test,您使用QQ成功登录！");
 %>   
