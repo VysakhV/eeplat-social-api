@@ -1,0 +1,23 @@
+USE `multi_tenancy`;
+
+/*Table structure for table `account` */
+
+DROP TABLE IF EXISTS `account`;
+
+CREATE TABLE `account` (
+  `objUid` varchar(32) NOT NULL default '',
+  `user_id` varchar(255) default NULL,
+  `nickName` varchar(255) default NULL,
+  `user_name` varchar(255) default NULL,
+  `user_email` varchar(255) default NULL,
+  `gender` char(1) default NULL,
+  `province` varchar(255) default NULL,
+  `city` varchar(255) default NULL,
+  `location` varchar(255) default NULL,
+  `figureurl` varchar(255) default NULL,
+  `figureurl_1` varchar(255) default NULL,
+  `figureurl_2` varchar(255) default NULL,
+  `user_description` varchar(2000) default NULL,
+  `open_site` varchar(255) default NULL,
+  PRIMARY KEY  (`objUid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
