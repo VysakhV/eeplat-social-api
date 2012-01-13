@@ -2,7 +2,7 @@ package com.eeplat.social.openapi.user;
 
 import com.exedosoft.plat.bo.BaseObject;
 
-public class User extends BaseObject {
+public class SocialUser extends BaseObject {
 
 	/**
 	 * 
@@ -10,6 +10,7 @@ public class User extends BaseObject {
 	private static final long serialVersionUID = -7416812774750944542L;
 
 	
+	private String name;
 	private String userId;
 	private String nickName;
 	private String userName;
@@ -26,7 +27,7 @@ public class User extends BaseObject {
 	
     private String openSite;
 
-    public final static String OPEN_SITE_WEIBO = "renren";
+    public final static String OPEN_SITE_WEIBO = "weibo";
     public final static String OPEN_SITE_QQ = "qq";
     public final static String OPEN_SITE_163 = "163";
     public final static String OPEN_SITE_RENREN = "renren";
@@ -39,6 +40,15 @@ public class User extends BaseObject {
 		this.userId = userId;
 	}
 
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
 	public String getNickName() {
 		return nickName;
 	}

@@ -22,5 +22,7 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/httpclient-4.1.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/json_simple-1.1.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/httpcore-4.1.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/yhsdao.jar" sourcepath="E:/eclipse/workspace/yiyi_dao/src"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/yhsmain.jar" sourcepath="E:/eclipse/workspace/yiyi_core/src"/>
 	<classpathentry kind="output" path="WebContent/WEB-INF/classes"/>
 </classpath>

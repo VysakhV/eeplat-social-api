@@ -3,18 +3,18 @@ package com.eeplat.social.openapi.user;
 import com.exedosoft.plat.DAOUtil;
 import com.exedosoft.plat.ExedoException;
 
-public class UserManager {
+public class SocialUserManager {
 	
 	
 	private static  DAOUtil daoUtil = DAOUtil.currentDataSource("/globals.xml");
 
-	public static User storeUser(User aUser) {
+	public static SocialUser storeUser(SocialUser aUser) {
 
 		if (aUser == null || aUser.getUserId() == null) {
 			return null;
 		}
 
-		User existUser = daoUtil.getByProperty(User.class, "user_id",
+		SocialUser existUser = daoUtil.getByProperty(SocialUser.class, "user_id",
 				aUser.getUserId());
 
 		if (existUser == null) {
