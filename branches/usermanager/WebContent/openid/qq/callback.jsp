@@ -19,8 +19,12 @@
 	user.setUserId(openid);
 	user.setNickName((String)currentUser.get("nickname"));
 	user.setFigureurl((String)currentUser.get("figureurl"));
-	user.setFigureurl1((String)currentUser.get("figureurl1"));
-	user.setFigureurl2((String)currentUser.get("figureurl2"));
+	try{
+		user.setFigureurl1((String)currentUser.get("figureurl1"));
+		user.setFigureurl2((String)currentUser.get("figureurl2"));
+	}catch(Exception e){
+		
+	}
 	if("男".equals(currentUser.get("gender"))){
 		user.setGender("M");
 	}else{
